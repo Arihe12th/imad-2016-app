@@ -4,7 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var article1={
+var articles={
+article1:{
     title:'arihent|article1',
     head:'article1',
     date:'11/06/2016',
@@ -16,7 +17,20 @@ var article1={
                </p>
                 <p>
                so to provide html response ,get the file name form user,use sendfile function to send the html response.by this you can provide html respone. so to provide html response ,get the file name form u ,usesendfilefunct.by this you can provide html respone.
-               </p>`};
+               </p>`},
+               article2:{ title:'arihent|article2',
+    head:'article2',
+    date:'11/06/2016',
+    content:` <p>
+             this is article2
+               </p>`},
+               article3:{ title:'arihent|article2',
+    head:'article2',
+    date:'11/06/2016',
+    content:` <p>
+             this is article2
+               </p>`},
+}
                
                function createTemplate(data){
                var title=data.title;
@@ -61,14 +75,9 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article1',function(req, res){
-  res.send(createTemplate(article1));
-});
-app.get('/article2',function(req, res){
-    res.send('article two we serv ed soon');
-});
-app.get('/article3',function(req, res){
-    res.send('article three we served soon');
+app.get('/:articlename',function(req, res){
+    var articlename=req.parama.articlename;
+  res.send(createTemplate(articles[articlename]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
