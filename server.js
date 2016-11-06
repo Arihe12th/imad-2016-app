@@ -17,9 +17,6 @@ var article1={
                 <p>
                so to provide html response ,get the file name form user,use sendfile function to send the html response.by this you can provide html respone. so to provide html response ,get the file name form u ,usesendfilefunct.by this you can provide html respone.
                </p>`
-               var htmltemplate={
-                   ``
-               }
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
