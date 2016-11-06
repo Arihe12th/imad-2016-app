@@ -17,12 +17,12 @@ var article1={
                 <p>
                so to provide html response ,get the file name form user,use sendfile function to send the html response.by this you can provide html respone. so to provide html response ,get the file name form u ,usesendfilefunct.by this you can provide html respone.
                </p>`};
-               function createTemplate(data)
-               {
-               title=data.title;
-               head=data.head;
-               date=data.date;
-               content=data.content;
+               
+               function createTemplate(data){
+               var title=data.title;
+               var head=data.head;
+               var date=data.date;
+               var content=data.content;
                var htmltemplate=
 `<html>
     <head>
