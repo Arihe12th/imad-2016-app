@@ -16,16 +16,54 @@ var article1={
                </p>
                 <p>
                so to provide html response ,get the file name form user,use sendfile function to send the html response.by this you can provide html respone. so to provide html response ,get the file name form u ,usesendfilefunct.by this you can provide html respone.
-               </p>`
+               </p>
+               function createTemplate(data)
+               {
+               title=data.title;
+               head=data.head;
+               date=data.date;
+               content=data.content;
+               var htmltemplate={
+<html>
+    <head>
+        <title>
+          ${title}
+    </title>
+        <meta name="viewport" content="width=device-width,intial-scale=1-0">
+        <link rel="stylesheet" href="ui/style.css">
+    </head>
+    <body>
+        <div class="container">
+    <div>
+        <a href="/">Home</a>
+        <hr>
+    </div>
+    <div>
+        <h3>
+             ${head}
+        </h3>
+       <p>
+           ${date}
+        </p>
+        <p>
+            ${content}
+        </p>
+    </div>
+    </div>
+</body>
+</html>       
+             return htmltemplate;      
+               }
+}
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article1',function(req, res){
-  res.sendFile(path.join(__dirname, '', 'article1.html'));
+  res.send(createTmpelate(article1));
 });
 app.get('/article2',function(req, res){
-    res.send('article two we served soon');
+    res.send('article two we serv ed soon');
 });
 app.get('/article3',function(req, res){
     res.send('article three we served soon');
