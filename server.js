@@ -47,9 +47,9 @@ var article1={
        <p>
            ${date}
         </p>
-        <div>
+        <p>
             ${content}
-        </div>
+        </p>
     </div>
     </div>
 </body>
