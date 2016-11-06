@@ -20,9 +20,9 @@ body {
     height: 200px;
 }
 .icon{
-    width:1000px;
-    height:400px;
-    background-color:balck;
+    width: 1000px;
+    height: 400px;
+    background-color: black;
     position:absolute;
     left:10px;
     top:10px;
