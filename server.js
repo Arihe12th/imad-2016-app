@@ -47,7 +47,7 @@ var article1={
        <p>
            ${date}
         </p>
-        <fdiv>
+        <div>
             ${content}
         </div>
     </div>
