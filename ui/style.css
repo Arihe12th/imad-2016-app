@@ -20,6 +20,8 @@ body {
     height: 200px;
 }
 .icon{
+    width:1000px;
+    height:400px;
     background-color:balck;
     position:absolute;
     left:10px;
