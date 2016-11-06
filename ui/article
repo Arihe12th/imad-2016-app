@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Arihenth|article1
+        </title>
+        <meta name="viewport" content="width=device-width,intial-scale=1-0">
+        <link rel="stylesheet" href="ui/style.css">
+    </head>
+    <body>
+        <div class="container">
+    <div>
+        <a href="/">Home</a>
+        <hr>
+    </div>
+    <h1>article 1</h1>
+    <h2>11/6/2016</h2>
+    <div>
+        <p>
+             this is article one which is about html response. this is article one which is about html response. this is article one which is about html response this is article one which is about html response this is article one which is about html response
+        </p>
+        <p>
+            in server file instead for text response provide html response.
+        </p>
+        <p>
+            so to provide html response ,get the file name form user,use sendfile function to send the html response.by this you can provide html respone. so to provide html response ,get the file name form u ,usesendfilefunct.by this you can provide html respone.
+        </p>
+    </div>
+    </div>
+    </body>
+</html>
