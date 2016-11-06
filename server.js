@@ -19,7 +19,7 @@ var article1={
                </p>`};
                function createTemplate(data)
                {
-               title=data.title;
+               titlw=data.title;
                head=data.head;
                date=data.date;
                content=data.content;
