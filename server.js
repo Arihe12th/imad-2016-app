@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var article1={
     title:'arihent|article1',
     head:'article1',
-    date:11/06/2016,
+    date:'11/06/2016',
     content:` <p>
               this is article one which is about html response. this is article one which is about html response. this is article one which is about html response this is article one which is about html response this is article one which is about html response
                </p>
