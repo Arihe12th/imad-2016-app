@@ -50,6 +50,7 @@ var article1={
         <p>
             ${content}
         </p>
+        
     </div>
     </div>
 </body>
