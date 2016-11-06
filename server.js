@@ -4,7 +4,23 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var article1={
+    title:'arihent|article1',
+    head:'article1',
+    date:11/06/2016,
+    content:` <p>
+              this is article one which is about html response. this is article one which is about html response. this is article one which is about html response this is article one which is about html response this is article one which is about html response
+               </p>
+               <p>
+               in server file instead for text response provide html response.
+               </p>
+                <p>
+               so to provide html response ,get the file name form user,use sendfile function to send the html response.by this you can provide html respone. so to provide html response ,get the file name form u ,usesendfilefunct.by this you can provide html respone.
+               </p>`
+               var htmltemplate={
+                   ``
+               }
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
