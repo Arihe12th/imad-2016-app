@@ -41,9 +41,9 @@ var article1={
         <hr>
     </div>
     <div>
-        <h3>
+        <h1>
              ${head}
-        </h3>
+        </h1>
        <div>
            ${date}
         </div>
