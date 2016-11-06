@@ -23,6 +23,8 @@ var article1={
                var head=data.head;
                var date=data.date;
                var content=data.content;
+               
+               
                var htmltemplate=
 `<html>
     <head>
@@ -42,12 +44,12 @@ var article1={
         <h3>
              ${head}
         </h3>
-       <p>
+       <div>
            ${date}
-        </p>
-        <p>
+        </div>
+        <fdiv>
             ${content}
-        </p>
+        </div>
     </div>
     </div>
 </body>
@@ -58,7 +60,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article1',function(req, res){
-  res.send(createTmpelate('article1'));
+  res.send(createTmpelate(article1));
 });
 app.get('/article2',function(req, res){
     res.send('article two we serv ed soon');
