@@ -44,9 +44,9 @@ var article1={
         <h1>
              ${head}
         </h1>
-       <div>
+       <p>
            ${date}
-        </div>
+        </p>
         <fdiv>
             ${content}
         </div>
