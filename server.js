@@ -25,10 +25,10 @@ article1:{
              this is article2
                </p>`},
                article3:{ title:'arihent|article2',
-    head:'article2',
+    head:'article3',
     date:'11/06/2016',
     content:` <p>
-             this is article2
+             this is article3
                </p>`},
 }
                
