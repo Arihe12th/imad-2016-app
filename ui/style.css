@@ -17,18 +17,20 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 200px; 
 }
 .icon{
     width: 2000px;
-    height: 50px;
-    background-color: black;
+    height: 60px;
+    background-color:ghostwhite; ;
     position:absolute;
-    left:10px;
+    left:1px;
     top:10px;
+    right:1px;
+    
 }
 .medium{
-    height:50px;
+    height:20px;
 }
 .container{
     width:800px;
@@ -36,18 +38,24 @@ body {
     font:san-sharif;
     margin:0 auto;
     background-color:teal;
-    color:white;
+    color:gainsboro;
     padding-top:20px;
     padding-left:40px;
     padding-right:40px;
 }
 ul{
     list-style-type:none;
-    margin:0;
-    padding:20;
+    margin:10;
+    padding:50;
 }
 li{
     display:inline;
+    text-color:red;
+    padding: 80px;
+    text-transform: uppercase;
+    
 }
-
+a{
+    color:chocolate;
+}
 
