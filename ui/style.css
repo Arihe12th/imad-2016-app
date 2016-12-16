@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background: url(https://static.pexels.com/photos/1380/black-and-white-city-skyline-buildings.jpg);
     margin-top: 75px;
 }
 
@@ -58,8 +58,5 @@ li{
 a{
     color:chocolate;
 }
-.bc{
-    background: url(https://static.pexels.com/photos/1380/black-and-white-city-skyline-buildings.jpg);
-}
-}
+   
 
